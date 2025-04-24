@@ -1,6 +1,6 @@
 import puppeteer, { Browser, LaunchOptions } from 'puppeteer';
 
-// Singleton browser service
+// Singleton browser servicefdsafdsa
 class BrowserService {
   private browser: Browser | null = null;
   private isInitializing = false;
