@@ -12,7 +12,7 @@ class BrowserService {
       return this.browser;
     }
 
-    // Return the initialization promise if already initializing
+    // Return the initialization promise if already initializingdsafdsa
     if (this.isInitializing && this.initPromise) {
       return this.initPromise;
     }
