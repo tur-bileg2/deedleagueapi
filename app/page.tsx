@@ -7,7 +7,7 @@ import { ChevronDown, Users, BarChart2, Award, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
-
+  const a=0;
   // Animate elements when they come into view
   useEffect(() => {
     setIsVisible(true);
