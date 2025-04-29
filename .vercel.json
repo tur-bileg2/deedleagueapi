@@ -8,11 +8,39 @@
     "api/player-details/*.ts": {
       "memory": 3008,
       "maxDuration": 60
+    },
+    "api/teams/*.ts": {
+      "memory": 1024,
+      "maxDuration": 30
+    },
+    "api/stats/*.ts": {
+      "memory": 1024,
+      "maxDuration": 30
     }
   },
   "build": {
     "env": {
       "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true"
     }
-  }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=60, stale-while-revalidate=600"
+        }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, immutable"
+        }
+      ]
+    }
+  ]
 }
