@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@prisma/client": "^6.6.0",
@@ -20,6 +21,7 @@
     "axios": "^1.8.4",
     "bcryptjs": "^3.0.2",
     "cheerio": "^1.0.0",
+    "chrome-aws-lambda": "^10.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.7.4",
