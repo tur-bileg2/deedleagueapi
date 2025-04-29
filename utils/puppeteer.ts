@@ -11,7 +11,7 @@ export async function getPuppeteerBrowser() {
   
   // Vercel serverless environment
   return puppeteer.launch({
-    args: chromium.args,
+    args: [...chromium.args, '--disable-dev-shm-usage', '--no-sandbox'],
     defaultViewport: chromium.defaultViewport,
     executablePath: await chromium.executablePath,
     headless: true,
