@@ -18,7 +18,7 @@ export default function AboutPage() {
               Back to Home
             </Link>
           </div>
-          <h1 className="text-4xl font-bold mb-4">About Deed League API</h1>
+          <h1 className="text-4xl font-bold mb-4">About Deed League API </h1>
           <p className="text-xl text-blue-100 max-w-3xl">
             Transforming basketball data access for Mongolia's growing basketball community 
           </p>
