@@ -20,7 +20,7 @@ export default function AboutPage() {
           </div>
           <h1 className="text-4xl font-bold mb-4">About Deed League API</h1>
           <p className="text-xl text-blue-100 max-w-3xl">
-            Transforming basketball data access for Mongolia's growing basketball community
+            Transforming basketball data access for Mongolia's growing basketball community 
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-16" style={{ 
